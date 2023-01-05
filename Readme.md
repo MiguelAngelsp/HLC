@@ -8,8 +8,7 @@ sudo apt install docker docker-compose
 sudo usermod -aG docker $USER
 sudo systemctl restart docker
 ```
-3. En https://hub.docker.com/ podemos buscar imagenes de docker ya preparadas
-4. Podemos comprobar qué imágenes tenemos con:
+3. Podemos comprobar qué imágenes tenemos con:
 ```shell
   docker images
 ```
