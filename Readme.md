@@ -8,7 +8,8 @@ sudo apt install docker docker-compose
 sudo usermod -aG docker $USER
 sudo systemctl restart docker
 ```
-3. Podemos comprobar qué imágenes tenemos con:
+3. En https://hub.docker.com/ podemos buscar imagenes de docker ya preparadas
+4. Podemos comprobar qué imágenes tenemos con:
 ```shell
   docker images
 ```
@@ -21,6 +22,8 @@ systemctl is-active docker
 systemctl start docker
 systemctl enable docker
 ```
+Si necesitas mas información sobre cuestiones de docker en https://www.configserverfirewall.com/docker/ puedes encontrarla.
+Si no en la página oficial de docker https://www.docker.com/
 
 # Comandos Docker
 ## Básicos

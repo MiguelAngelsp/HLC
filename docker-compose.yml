@@ -7,9 +7,9 @@ services:
     ports:
       - ${DB_PORT}:5432
     environment:
-      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_PASSWORD: ${DB_PASS}
       POSTGRES_DB: ${DB_NAME}
-      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_USER: ${DB_USER}
     volumes:
       - ./postgres:/var/lib/postgresql/data
     networks: 
@@ -29,8 +29,8 @@ services:
         - PROYECTO=${PROYECTO}
         - DB_HOST=${DB_HOST}
         - DB_NAME=${DB_NAME}
-        - DB_USERNAME=${DB_USERNAME}
-        - DB_PASSWORD=${DB_PASSWORD}
+        - DB_USER=${DB_USER}
+        - DB_PASS=${DB_PASS}
         - DB_PORT=${DB_PORT}
         - GITHUB=${GITHUB}
         - WWW_PORT=${WWW_PORT}
